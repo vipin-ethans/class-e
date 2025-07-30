@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tsunami Alert</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial Black', sans-serif;
+      background: url('https://images.unsplash.com/photo-1604212125245-8b785cfc1300') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      backdrop-filter: brightness(0.5);
+    }
+
+    h1 {
+      font-size: 4em;
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+      animation: wave 2s ease-in-out infinite;
+    }
+
+    p {
+      font-size: 1.5em;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+      margin-top: 20px;
+    }
+
+    @keyframes wave {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      font-size: 1em;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <h1>⚠️ Tsunami Incoming ⚠️</h1>
+  <p>Stay alert. Move to higher ground. Safety is the priority.</p>
+  <footer>Disaster Management Authority</footer>
+</body>
+</html>
